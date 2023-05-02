@@ -1,0 +1,1 @@
+create table b_s(bs int not null AUTO_INCREMENT PRIMARY KEY,bigsid int, FOREIGN key(bigsid) REFERENCES biggersavings(bigsid),userid int,FOREIGN key(userid) REFERENCES user(userid),finalamt int)AUTO_INCREMENT=1;

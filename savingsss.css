@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hahmlet:wght@100&family=Linden+Hill&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /*background-color: #a5e7d7;*/
+}
+
+:root{
+    --green : #39A388;
+    --white : #fff;
+    --pink : #F0CBD4;
+    --orange : #df6159;
+    --orange2 : #e67d76;
+    --black : #333;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--green);
+    border-left: 10px solid var(--green);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active{
+    width: 80px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover{
+    background: var(--white);
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li:nth-child(8){
+    margin-top: 190px;
+   
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation ul li:hover a{
+    color: var(--green);
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+    /*color: white;*/
+}
+
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+/*---*/
+.navigation ul li:hover a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none
+}
+
+.navigation ul li:hover a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none
+}
+
+.container .main.active{
+    width: calc(100% - 80px);
+    left: 80px;
+    /*background:#d5f0e9;*/
+}
+
+.container .main .topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 0px;
+}
+
+
+.container .main .topbar .toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.container .main .transferMoney {
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    display: inherit;
+    
+}
+
+.container .piggy-saving{
+    position: relative;
+    left: 310px;
+    width: 1200px;
+    height: 650px;
+    padding: 20px;
+    border: 2px solid #39A388;
+    border-radius: 10px;
+}
+
+.container .piggy-saving .multiple-divs{
+    position: relative;
+}
+
+.container .piggy-saving .multiple-divs .div-1{
+    position: relative;
+    height: 170px;
+    padding: 10px;
+    top: 30px;
+    border: 2px solid #df6159;
+    border-radius: 10px;
+}
+
+.container .piggy-saving .multiple-divs .div-1 .btn{
+    background-color: #39A388;
+    color: var(--white);
+    border: none;
+}
+
+.container .piggy-saving .multiple-divs .div-2{
+    position: relative;
+    height: 350px;
+    padding: 10px;
+    top: 57px;
+    border: 2px solid #39A388;
+    border-radius: 10px;
+}
+
+.container .piggy-saving .multiple-divs .div-2 #goals {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.container .piggy-saving .multiple-divs .div-2 #goals td, .container .piggy-saving .multiple-divs .div-2 #goals th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.container .piggy-saving .multiple-divs .div-2 #goals tr:nth-child(even){background-color: #f2f2f2;}
+  
+.container .piggy-saving .multiple-divs .div-2 #goals tr:hover {background-color: #ddd;}
+  
+.container .piggy-saving .multiple-divs .div-2 #goals th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #39A388;
+    color: white;
+    font-weight: 100;
+  }
+
+.container .piggy-saving .multiple-divs .div-2 .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.container .piggy-saving .multiple-divs .div-2 .modal .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid #39A388;
+    width: 40%;
+  }
+  
+  .container .piggy-saving .multiple-divs .div-2 .modal .modal-content .btn{
+    background-color: #39A388;
+    color: #fff;
+  }
+  /* The Close Button */
+  .container .piggy-saving .multiple-divs .div-2 .modal .modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.container .piggy-saving .multiple-divs .div-2 .modal .modal-content .close:hover,
+.container .piggy-saving .multiple-divs .div-2 .modal .modal-content .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

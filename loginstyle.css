@@ -1,0 +1,286 @@
+.container .row .img .image{
+    margin-top: 130px;
+    margin-left: -90px;
+    align-content: center;
+}
+
+.container .row .img p{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 40px;
+    position: absolute;
+}
+
+/*.container .row .img #p2{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 50px;
+    position: absolute;
+}*/
+
+.container .row .info{
+    float: right;
+    margin-left: 300px;
+    margin-top: 120px;
+    
+}
+
+.container .row .info h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.container .row .info .username{
+    border:none;
+    border-bottom: 2px  solid #39A388;
+    margin: 60px 0 0 80px;
+    width: 320px;
+    outline: none;
+    font-style: normal;
+    background: none;
+}
+
+.container .row .info .password{
+    border:none;
+    border-bottom: 2px  solid #39A388;
+    margin:50px 0 0 80px;
+    width: 320px;
+    outline: none;
+    font-style: normal;
+    background: none;
+}
+
+.container .row .info .pass{
+    color: #39A388;
+    margin: 125px 0 0 -130px;
+    position: absolute;
+
+}
+.container .row .info .button{
+    margin:70px 0 0 80px;
+    width: 320px;
+    border: none;
+    background-color: #39A388;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+.container .row .info .signn {
+        margin: 70px 0 0 95px;
+        position: relative;
+        font-size: 17px;
+}
+
+.container .row .info .signn #signupp a{
+        color: #39A388;
+}
+
+.container .row .info .button:hover{
+    opacity: 0.9;
+}
+
+
+/*----------------*/
+
+.container .row .info2{
+    float: right;
+    margin-left: 300px;
+    margin-top: 80px;
+    
+}
+
+.container .row .info2 h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.container .row .info2 .username{
+    border:none;
+    border-bottom: 2px  solid #39A388;
+    margin: 40px 0 0 80px;
+    width: 320px;
+    outline: none;
+    font-style: normal;
+    background: none;
+}
+
+.container .row .info2 .password{
+    border:none;
+    border-bottom: 2px  solid #39A388;
+    margin:40px 0 0 80px;
+    width: 320px;
+    outline: none;
+    font-style: normal;
+    background: none;
+}
+
+
+.container .row .info2 .button{
+    margin:45px 0 0 80px;
+    width: 320px;
+    border: none;
+    background-color: #39A388;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+.container .row .info2 .signn {
+        margin: 30px 0 0 95px;
+        position: relative;
+        font-size: 17px;
+}
+
+.container .row .info2 .signn #signupp a{
+        color: #39A388;
+}
+
+.container .row .info2 .button:hover{
+    opacity: 0.9;
+}
+
+.container .row .info2 .hr {
+    display: inline;
+    margin: 20px 0 0 20px;
+    position: absolute;
+}
+
+.container .row .info2 .hr p{
+    display: inline;
+    margin: 5px 0 0 160px;
+    padding: 10px;
+   
+}
+.container .row .info2 .hr hr{
+   width: 120px;
+   height: 1px;
+   color: black;
+   display: inline;
+   position: absolute;
+   margin-left: 30px;
+}
+
+.container .row .info2 .hr .hr2{
+    width: 120px;
+    height: 1px;
+    color: black;
+    display: inline;
+    position: absolute;
+    margin-left: 10px;
+ }
+
+ .container .row .info2 .hr .logo{
+    margin: 10px 0 0 60px;
+}
+ .container .row .info2 .hr a img{
+     margin: 20px 0 0 60px;
+     width: 27px;
+     height: 27px;
+ }
+
+/*------------*/
+
+@media screen and (max-width: 600px) {
+    body .container .row .img .image{
+      opacity: 0.5;
+      width: 600px;
+      margin-left: -60px;
+      margin-top: 140px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+      body .container .row .info{
+        margin-top: 180px;
+        margin-left: -240px;
+        position: relative;
+      }
+      body .container .row .info h3{
+          margin-left: 200px;
+      }
+      body .container .row .info .pass{
+          margin-left: 260px;
+          margin-top: 5px;
+          white-space: nowrap;
+          display: inline;
+          position: absolute;
+     }
+      body .container .row .info .signn{
+          margin-left: 95px;
+          margin-top: 70px;
+          position: absolute;
+          white-space: nowrap;
+          display: inline;
+      }
+  }
+
+  @media screen and (max-width: 600px){
+      body .container .row .info2{
+        margin-top: 150px;
+        margin-left: -240px;
+        position: relative;
+      }
+      body .container .row .info2 h3{
+        margin-left: 180px;
+        display: inline;
+        white-space: nowrap;
+    }
+    body .container .row .info2 h3{
+        margin-left: 180px;
+        display: inline;
+        white-space: nowrap;
+    }
+
+    body .container .row .info2 .signn{
+        display: inline;
+        white-space: nowrap;
+    }
+
+    body .container .row .info2 .hr{
+        display: inline;
+        white-space: nowrap;
+    }
+  }
+
+
+  .container .row .info .error{
+      margin-left: 50px;
+  }
+
+  .barerror { 
+    position: relative; 
+    background-color: #F3A3A3;
+    height: 42px;
+    padding: 10px;
+    width: 370px;
+    margin-left: 60px;
+    border-radius: 1%;
+    }
+div.close {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.barerror p{
+    margin-left: 14px;
+}
+
+.container .row .info2 .error{
+    position: relative; 
+    background-color: #F3A3A3;
+    height: 42px;
+    padding: 10px;
+    width: 370px;
+    margin-left: 60px;
+    border-radius: 1%;
+}
